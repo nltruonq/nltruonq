@@ -10,35 +10,13 @@
     <title>Web F8</title>
 </head>
 <body>
-    <embed src="./audio.mp3" loop="true" autostart="true" width="2" height="0">
-    <div id="main">
-        <div id="header">
-            <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
-                <li id="more">
-                    <a href="#">More
-                        <i class="ti-angle-down"></i>
-                    </a>
-                    <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <i class="fasearch ti-search"></i>
-        </div>
-        <div id="slide">
-        </div>
-        <div id="content">
-
-        </div>
-        <div id="footer">
-
-        </div>
-    </div>
+   <audio id="scary-music" src="./audio.mp3"></audio>
+    <script src="script/root.js"></script>
+    <script>
+    Red.ready(function () {
+        var music = "on";
+        Root.initialize(music);
+    });
+</script>
 </body>
 </html>
