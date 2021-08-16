@@ -10,16 +10,10 @@
     <title>Web F8</title>
 </head>
 <body>
-    <iframe src="./audio.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-</iframe> 
-    <script>
-          var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  if (!isChrome){
-      $('#iframeAudio').remove()
-  }
-  else {
-      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
-  }
-    </script>
+    <iframe src="./s.mp3" allow="autoplay" id="audio" style="display:none">
+    </iframe>
+    <audio id="player" autoplay loop>
+        <source src="./audio.mp3" type="audio/mp3">
+    </audio>
 </body>
 </html>
