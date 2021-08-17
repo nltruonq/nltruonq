@@ -49,7 +49,7 @@
 }
 
 .nav li a:hover {
-    color: tomato;
+    color: red;
     font-weight: 800;
 }
 
