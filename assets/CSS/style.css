@@ -42,6 +42,12 @@
     color: #fff;
     letter-spacing: 3px;
     font-weight: 500;
+    transition: color .6s;
+}
+
+.nav li {
+    background-color: transparent;
+    transition: background .5s;
 }
 
 .nav li:hover {
@@ -50,7 +56,6 @@
 
 .nav li a:hover {
     color: tomato;
-    font-weight: 800;
 }
 
 #home {
@@ -92,7 +97,7 @@
 
 .content .text-content:hover {
     animation: none;
-    cursor: none;
+    cursor: default;
 }
 
 .content .sm {
@@ -107,10 +112,35 @@
     font-size: 200%;
     margin-right: 20px;
     color: rgb(0, 0, 0);
+    transition: 0.3s;
 }
 
 .content .sm a:hover {
     color: tomato;
+}
+
+.buttons {
+    height: 140%;
+    text-align: center;
+    margin: 60px 20px;
+}
+
+.content .buttons a {
+    display: inline-block;
+    width: 180px;
+    margin: 15px 60px;
+    padding: 14px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #46f9f9ba;
+    transition: all 0.7s;
+}
+
+.content .buttons a:hover {
+    background-color: #48dafbb5;
+    color: #fff;
 }
 
 #about {
