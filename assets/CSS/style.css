@@ -120,14 +120,21 @@
 }
 
 .buttons {
+    position: relative;
     height: 140%;
     text-align: center;
     margin: 60px 20px;
+    overflow: hidden;
+}
+
+.buttons #btn-yes {
+    left: 26%;
 }
 
 .content .buttons a {
+    position: absolute;
     display: inline-block;
-    width: 180px;
+    width: 15%;
     margin: 15px 60px;
     padding: 14px;
     border: 1px solid #00ff00;
@@ -135,19 +142,102 @@
     font-size: 20px;
     font-weight: 500;
     color: #46f9f9ba;
-    transition: all 0.7s;
+    transition: color 0.7s, background 0.7s,
+                 top 0.1s, left 0.1s;
+}
+
+.buttons > h4 {
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #ccc;
 }
 
 .content .buttons a:hover {
+    text-shadow: 0 0 10px #000;
     background-color: #48dafbb5;
     color: #fff;
 }
 
 #about {
+    position: relative;
+    height: 70vh;
+    max-width: 1400px;
+    margin: 30px 10%;
+}
 
+#about .content .about-title{
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 28px;
+    color: #111;
+    transition: all 2s;
+}
+
+#about .content .about-title:hover {
+    color: #fff;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+#about .icon {
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    color: rgb(251, 75, 187);
+}
+
+.fa-heart:before {  
+    display: inline-block;
+    transition: all 1s;
+}
+
+#about .far:hover {
+    font-size: 40px;
+    color: tomato;
+}
+
+.content .info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.info .info-avt {
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 100px;
+}
+
+.info .info-avt:hover {
+    opacity: 0.8;
+}
+
+.info .info-content {
+    flex: 1;
 }
 
 #contact {
- height: 1000px;
- background-color: #ccc;
+    position: relative;
+    height: 50vh;
+    background-color: rgba(126, 28, 195, 0.889);
+}
+
+#contact .contact-title .title {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 28px;
+    color: tomato;
+    transition: all 2s;
+}
+
+#contact .contact-title .title:hover {
+    color: rgba(126, 28, 195, 0.5);
+    font-weight: 700;
+    font-size: 34px;
 }
