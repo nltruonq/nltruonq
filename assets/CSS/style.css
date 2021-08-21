@@ -40,6 +40,7 @@
     text-transform: uppercase;
     font-size: 15px;
     color: #fff;
+    text-shadow: 0 0 10px #000;
     letter-spacing: 3px;
     font-weight: 500;
     transition: color .6s;
@@ -75,6 +76,22 @@
     background-color: transparent;
 }
 
+
+
+@-webkit-keyframes ani {
+    0% {color: Crimson;}
+    12.5% {color: rgb(241, 92, 76);}
+    25% {color: LightSalmon;}
+    37.5% {color: rosybrown;}
+    50% {color: pink;}
+    62.5% {color: rgb(251, 61, 181);}
+    75% {color:rgb(231, 49, 74);}
+    87.5% {color: rgb(98, 49, 245);}
+    100% {color: indigo;}
+}
+
+
+
 @keyframes ani {
     0% {color: Crimson;}
     12.5% {color: rgb(241, 92, 76);}
@@ -90,13 +107,17 @@
 .content .text-content {
     text-align: center;
     margin-bottom: 20px;
-    animation: ani;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    -webkit-animation: ani;
+            animation: ani;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 
 .content .text-content:hover {
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
     cursor: default;
 }
 
@@ -208,7 +229,7 @@
 .info .info-avt {
     width: 200px;
     border-radius: 50%;
-    margin-right: 100px;
+    margin: 0 auto 60px;
 }
 
 .info .info-avt:hover {
@@ -217,12 +238,16 @@
 
 .info .info-content {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact {
     position: relative;
     height: 50vh;
-    background-color: rgba(126, 28, 195, 0.889);
+    background-color: rgb(126, 28, 195);
 }
 
 #contact .contact-title .title {
