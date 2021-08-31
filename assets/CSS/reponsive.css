@@ -3,9 +3,13 @@
         display: none;
     }
 
+    #about {
+        margin: 20px 10% 5px;
+    }
+
     .info .info-avt {
         width: 200px;
-        margin: 0 auto 40px;
+        margin: 20px auto 40px;
     }
 
     .info-content .text1 {

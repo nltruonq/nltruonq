@@ -180,9 +180,10 @@
 
 #about {
     position: relative;
-    height: 70vh;
+    height: 80vh;
     max-width: 1400px;
-    margin: 0 10% 0;
+    margin: 50px 10% 0;
+    cursor: default;
 }
 
 #about .content .about-title{
