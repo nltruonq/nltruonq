@@ -1,0 +1,24 @@
+@media only screen and (max-width: 640px) {
+    #header {
+        display: none;
+    }
+
+    .info .info-avt {
+        width: 200px;
+        margin: 0 auto 40px;
+    }
+
+    .info-content .text1 {
+        text-align: center;
+        letter-spacing: 3px;
+        font-weight: 650;
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    
+    .info-content .text2 {
+        margin-top: 20px;
+        text-align: justify;
+    }
+    
+}
