@@ -1,4 +1,3 @@
-<div class="spinner"></div>
 <style>
 .spinner {
   width: 40px;
@@ -29,3 +28,4 @@
   }
 }
 </style>
+<div class="spinner"></div>
